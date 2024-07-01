@@ -1,4 +1,4 @@
-import { contextBridge, ipcRenderer } from 'electron';
+import { contextBridge } from 'electron';
 import { writeToSocket } from "./controller";
 
 contextBridge.exposeInMainWorld('controller', {

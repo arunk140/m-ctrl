@@ -17,6 +17,3 @@ export const preloadConfig: Configuration = {
     __filename: false,
   },
 };
-
-
-console.log(preloadConfig);

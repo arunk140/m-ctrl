@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./Card"
+import { Card, CardContent, CardHeader, CardTitle } from "./Card"
 import { ChevronDownIcon } from "lucide-react"
 import { Label } from "./Label"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuTrigger } from "./Dropdown"
@@ -13,6 +13,7 @@ export default function ControlCenter() {
     const [batteryMode, setBatteryMode] = useState("medium")
 
     useEffect(() => {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       window.controller.sendCommand("toggle_cooler_boost")
     }, [coolerBoost])
