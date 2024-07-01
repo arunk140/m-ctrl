@@ -1,6 +1,9 @@
 ### MSI Laptop Control Interface 
 #### for [BeardOverflow/msi-ec](https://github.com/BeardOverflow/msi-ec)
 
+![image](https://github.com/arunk140/m-ctrl/assets/8670239/444f656b-8bc7-4d6d-b2af-6e4d5f8f1b1d)
+
+
 This is an Electron app that provides a user interface to control various hardware settings on MSI laptops using the [BeardOverflow/msi-ec](https://github.com/BeardOverflow/msi-ec) library. With this app, you can adjust power usage, fan speeds, and battery charge limits on your MSI laptop.
 
 ## Features
