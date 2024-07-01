@@ -18,9 +18,18 @@ const config: ForgeConfig = {
   rebuildConfig: {},
   makers: [
     // linux only makers
-    new MakerZIP({}),
-    new MakerRpm({}),
-    new MakerDeb({}),
+    new MakerZIP({}, ['linux']),
+    // new MakerRpm({}, ['linux']),
+    new MakerDeb({
+      options: {
+        name:'m-ctrl',
+        categories: ["System", "Settings"],
+        description: "A MSI Laptop Control application",
+        productName: "m-ctrl",
+        productDescription: "A MSI Laptop Control application",
+        version: "0.0.1",
+      }
+    }, ['linux']),
   ],
   plugins: [
     new AutoUnpackNativesPlugin({}),
